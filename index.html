@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HTML Formulär och Tabeller</title>
+
+  <style>
+    table,
+    th,
+    td {
+      border: 1px solid black;
+    }
+  </style>
+
+</head>
+<h2>HTML Forms</h2>
+
+<form>
+  <label for="fname">First name:</label><br />
+  <input type="text" id="fname" name="fname" value="Förnamn" /><br />
+  <label for="lname">Last name:</label><br />
+  <input type="text" id="lname" name="lname" value="Efternamn" /><br /><br />
+  <input type="submit" value="Submit" />
+</form>
+
+<h2>HTML Forms med Fieldset och Legend</h2>
+<fieldset>
+  <legend> Ditt Meddelande:</legend>
+  <form>
+    <label for="fname">First name:</label><br />
+    <input type="text" id="fname" name="fname" value="Förnamn" /><br />
+    <label for="lname">Last name:</label><br />
+    <input type="text" id="lname" name="lname" value="Efternamn" /><br /><br />
+    <input type="submit" value="Submit" />
+  </form>
+</fieldset>
+
+<h2>Textarea- input fält du kan ändra storlek på</h2>
+
+<label for=”textBody”>Meddelande</label> <br />
+<textarea name=”txtBody” id=”textBody” cols=”50” rows=”10”> </textarea>
+
+<h2>Input fält med datum</h2>
+<input type="date" name="date" id="date" min="2022-01-13">
+<button>Skicka</button>
+
+
+<h2>Radio Buttons</h2>
+
+<p>Välj färg:</p>
+<form action="/action_page.php">
+  <input type="radio" id="blue" name="color" value="blue" />  
+  <label for="blue">Blue</label><br />
+  <input type="radio" id="red" name="color" value="red" />  
+  <label for="red">Red</label><br />
+  <input type="radio" id="green" name="color" value="Green" />
+  <label for="green">Green</label> <br><br>
+  <input type="submit" value="Submit">
+</form>
+
+<p>Välj språk:</p>
+<form action="/action_page.php">
+  <input type="checkbox" id="HTML" name="lang" value="HTML" />  
+  <label for="HTML">HTML</label><br />
+  <input type="checkbox" id="CSS" name="lang" value="CSS" />  
+  <label for="CSS">CSS</label><br />
+  <input type="checkbox" id="javascript" name="lang" value="javascript" />
+  <label for="javascript">JavaScript</label> <br><br>
+  <input type="submit" value="Submit">
+</form>
+
+<h2>Drop down menu with select and option</h2>
+<form>
+  <label for="fruit">Välj en frukt:</label>
+  <select id="fruit" name="fruits">
+    <option value="apple">Äpple</option>
+    <option value="banana">Banan</option>
+    <option value="orange">Apelsin</option>
+    <option value="kiwi">Kiwi</option>
+  </select>
+  <input type="submit">
+</form>
+
+<h2>En enkel tabell - intern (internal) styling längts upp för att göra tabellen tydligare</h2>
+
+<table>
+  <tr>
+    <th>SuperHero</th>
+    <th>Adress</th>
+    <th>Country</th>
+  </tr>
+  <tr>
+    <td>Iron man</td>
+    <td>Hollywood</td>
+    <td>USA</td>
+  </tr>
+  <tr>
+    <td>Captain Marvel</td>
+    <td>Space</td>
+    <td>Universe</td>
+  </tr>
+  <tr>
+    <td>Black Panther</td>
+    <td>Wakanda</td>
+    <td>Africa</td>
+  </tr>
+</table>
+<br /><br /><br />
+</body>
+
+</html>
